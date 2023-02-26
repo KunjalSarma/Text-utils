@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import React, { Component }  from 'react';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import About from './components/About';
@@ -31,7 +32,7 @@ const showAlert=(message,type)=>{
   setTimeout(() => {
     setAlert(null);
       
-     },3000);
+     },3000)
     
 }
 
@@ -58,15 +59,14 @@ else{
   return (
     <>
 
-      <Navbar title="TextUtils" mode= {mode} toggleMode={toggleMode}/>;
+      <Navbar title="TextUtils" mode= {mode} toggleMode={toggleMode}/>
       
       <Alert alert={alert}/>
       <div className='container'>   
-             <TextForm showAlert={showAlert}
-             heading="Enter your text to analyse below "  mode= {mode} />
+      <TextForm showAlert={showAlert} heading="Enter your text to analyse below "  mode= {mode} />
 
 
-             <About/>
+       <About/>
       </div>
 
 

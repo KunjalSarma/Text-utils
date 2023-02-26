@@ -43,7 +43,7 @@ export default function TextForm(props) {
         setText(event.target.value)
     }
         
-    const [text,setText]= useState('Enter Text ');
+    const [text,setText]= useState('Enter Text ')
  
   return (<>
 <div className="container" style={{color:props.mode==='dark'?'white':'black'}}>
